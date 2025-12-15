@@ -1,16 +1,22 @@
 using UnityEngine;
 
-public class TestingWheelchairMover : MonoBehaviour
-{
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
+public class TestingWheelchairMover : MonoBehaviour {
+    public KeyCode moveWheelForwardButton;
+    public KeyCode moveWheelBackwardButton;
+    public GameObject wheel;
+    public float rotationSpeed = 200f;
+
+    void Update() {
+        if (Input.GetKey(moveWheelForwardButton)) {
+            RotateWheel(rotationSpeed);
+        }
+
+        if (Input.GetKey(moveWheelBackwardButton)) {
+            RotateWheel(-rotationSpeed);
+        }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void RotateWheel(float speed) {
+        wheel.transform.Rotate(Vector3.right * speed * Time.deltaTime);
     }
 }
