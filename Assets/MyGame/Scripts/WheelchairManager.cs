@@ -7,7 +7,7 @@ public class WheelchairManager : MonoBehaviour
     Vector3 offset;
     private void Start() {
         cam = Camera.main;
-        offset = new Vector3(0.425f, -0.3f, 0f);
+        offset = new Vector3(0f, -0.3f, 0f);
     }
 
     private void Update() {
