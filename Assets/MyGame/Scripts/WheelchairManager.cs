@@ -3,15 +3,14 @@ using UnityEngine;
 public class WheelchairManager : MonoBehaviour
 {
     public GameObject chair;
-    Camera cam;
+    public GameObject rig;
     Vector3 offset;
     private void Start() {
-        cam = Camera.main;
-        offset = new Vector3(0f, -0.3f, 0f);
+        offset = new Vector3(0f, 0.1f, 0f);
     }
 
     private void Update() {
-        chair.transform.localPosition = cam.transform.localPosition + offset;
-        chair.transform.localRotation = Quaternion.Euler(0f, cam.transform.localEulerAngles.y + 180f, 0f);
+        chair.transform.localPosition = rig.transform.localPosition + offset;
+        chair.transform.localRotation = Quaternion.Euler(0f, rig.transform.localEulerAngles.y + 180f, 0f);
     }
 }
