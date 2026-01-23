@@ -6,7 +6,7 @@ public class WheelchairManager : MonoBehaviour
     public GameObject rig;
     Vector3 offset;
     private void Start() {
-        offset = new Vector3(0f, 0.1f, 0);
+        offset = new Vector3(0f, 0f, 0f);
     }
 
     private void Update() {
