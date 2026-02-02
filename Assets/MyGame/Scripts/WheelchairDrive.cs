@@ -19,7 +19,7 @@ public class WheelchairDrive : MonoBehaviour
 
         rightWheelDegrees = inputScript.valueA;
         leftWheelDegrees = inputScript.valueB;
-        
+
         int dLeft = leftWheelDegrees - lastLeft;
         int dRight = rightWheelDegrees - lastRight;
 
