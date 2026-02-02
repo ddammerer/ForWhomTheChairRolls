@@ -56,7 +56,6 @@ public class ArduinoSerialDebug : MonoBehaviour
             }
 
             Debug.Log("[ESP32] " + lineCopy);
-            // process rotary data here
         }
     }
 
