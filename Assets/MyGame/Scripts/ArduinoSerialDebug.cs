@@ -10,6 +10,10 @@ public class ArduinoSerialDebug : MonoBehaviour
     private string latestLine = null;
     private readonly object dataLock = new object();
 
+    // 🔹 Accessible from other scripts
+    public static int encoder1Value;
+    public static int encoder2Value;
+
     void Start()
     {
         serial = new SerialPort("COM3", 9600);
@@ -31,16 +35,13 @@ public class ArduinoSerialDebug : MonoBehaviour
         {
             try
             {
-                string line = serial.ReadLine(); 
+                string line = serial.ReadLine();
                 lock (dataLock)
                 {
                     latestLine = line;
                 }
             }
-            catch
-            {
-                
-            }
+            catch { }
         }
     }
 
@@ -55,19 +56,42 @@ public class ArduinoSerialDebug : MonoBehaviour
                 latestLine = null;
             }
 
-            Debug.Log("[ESP32] " + lineCopy);
+            ParseEncoders(lineCopy);
         }
     }
 
-    void OnApplicationQuit()
+    void ParseEncoders(string line)
     {
-        Shutdown();
+        // Expected format:
+        // Enc1 Dir: cw Rotation: 10
+        // Enc2 Dir: ccw Rotation: 5
+
+        if (line.StartsWith("Enc1"))
+        {
+            int value = ExtractRotation(line);
+            encoder1Value = value;
+        }
+        else if (line.StartsWith("Enc2"))
+        {
+            int value = ExtractRotation(line);
+            encoder2Value = value;
+        }
     }
 
-    void OnDestroy()
+    int ExtractRotation(string line)
     {
-        Shutdown();
+        int index = line.LastIndexOf("Rotation:");
+        if (index >= 0)
+        {
+            string number = line.Substring(index + 9).Trim();
+            int.TryParse(number, out int result);
+            return result;
+        }
+        return 0;
     }
+
+    void OnApplicationQuit() => Shutdown();
+    void OnDestroy() => Shutdown();
 
     void Shutdown()
     {
@@ -75,6 +99,7 @@ public class ArduinoSerialDebug : MonoBehaviour
 
         if (readThread != null && readThread.IsAlive)
             readThread.Join(200);
+
         if (serial != null && serial.IsOpen)
             serial.Close();
     }

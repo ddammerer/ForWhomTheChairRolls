@@ -5,20 +5,14 @@ public class WheelchairDrive : MonoBehaviour
     public float wheelRadius = 0.3f;   // meters
     public float wheelBase = 0.6f;     // distance between wheels
 
-    public RandImputScript inputScript;
-
-    public int leftWheelDegrees;
-    public int rightWheelDegrees;
-
     int lastLeft;
     int lastRight;
 
-
     void Update()
     {
-
-        rightWheelDegrees = inputScript.valueA;
-        leftWheelDegrees = inputScript.valueB;
+        // 🔹 Read directly from Arduino script
+        int rightWheelDegrees = ArduinoSerialDebug.encoder1Value;
+        int leftWheelDegrees  = ArduinoSerialDebug.encoder2Value;
 
         int dLeft = leftWheelDegrees - lastLeft;
         int dRight = rightWheelDegrees - lastRight;
