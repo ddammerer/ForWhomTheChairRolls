@@ -1,22 +1,27 @@
 using UnityEngine;
 
 public class TestingWheelchairMover : MonoBehaviour {
-    public KeyCode moveWheelForwardButton;
-    public KeyCode moveWheelBackwardButton;
-    public GameObject wheel;
-    public float rotationSpeed = 200f;
+    public GameObject wheelL;
+    public GameObject wheelR;
+    public float rotationSpeedR;
+    public float rotationSpeedL;
+    public GameObject BigParent;
+    private ArduinoSerialDebug arduino;
 
-    void Update() {
-        if (Input.GetKey(moveWheelForwardButton)) {
-            RotateWheel(rotationSpeed);
-        }
-
-        if (Input.GetKey(moveWheelBackwardButton)) {
-            RotateWheel(-rotationSpeed);
-        }
+    private void Awake()
+    {
+        arduino = BigParent.GetComponent<ArduinoSerialDebug>();
     }
 
-    private void RotateWheel(float speed) {
+    void Update() {
+
+        rotationSpeedR = ArduinoSerialDebug.encoder1Value;
+        rotationSpeedL = ArduinoSerialDebug.encoder2Value;
+        RotateWheel(rotationSpeedR, wheelR);
+        RotateWheel(rotationSpeedL, wheelL);
+    }
+
+    private void RotateWheel(float speed, GameObject wheel) {
         wheel.transform.Rotate(Vector3.right * speed * Time.deltaTime);
     }
 }
