@@ -8,8 +8,7 @@ public class TestingWheelchairMover : MonoBehaviour {
     public GameObject BigParent;
     private ArduinoSerialDebug arduino;
 
-    private void Awake()
-    {
+    private void Awake() {
         arduino = BigParent.GetComponent<ArduinoSerialDebug>();
     }
 
