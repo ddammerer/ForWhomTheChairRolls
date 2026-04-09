@@ -115,7 +115,7 @@ Transform:
   m_GameObject: {fileID: 4505115641521171248}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.995562, z: 0.09410823, w: 0}
-  m_LocalPosition: {x: 0, y: 0.416, z: 0.524}
+  m_LocalPosition: {x: 0, y: 0.416, z: 0.579}
   m_LocalScale: {x: 0.1, y: 0.1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -557,10 +557,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8391222552659086748, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RightFootrest
+      objectReference: {fileID: 0}
+    - target: {fileID: -8383124558419344257, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: TopToBottomCrossbeam
+      objectReference: {fileID: 0}
+    - target: {fileID: -8380157826906577798, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RightArmrestSupportBeam
+      objectReference: {fileID: 0}
     - target: {fileID: -8347221205978777541, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 512f2a2b2e1cdb14895ce165a7a0a152, type: 2}
+    - target: {fileID: -7640558969779515294, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: LeftArmrest
+      objectReference: {fileID: 0}
     - target: {fileID: -7388894396013007978, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -569,18 +585,50 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 512f2a2b2e1cdb14895ce165a7a0a152, type: 2}
+    - target: {fileID: -7146521406498821007, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RightArmrest
+      objectReference: {fileID: 0}
     - target: {fileID: -6902573867230041995, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 512f2a2b2e1cdb14895ce165a7a0a152, type: 2}
+    - target: {fileID: -6733177361254619370, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RightCenterHorizontalBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: -6577237425059042219, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: LeftCenterHorizontalBeam
+      objectReference: {fileID: 0}
     - target: {fileID: -6093592463355912122, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: e46322bb8f8b7b34bbd55e6d738e9b9d, type: 2}
+    - target: {fileID: -6064153176478479626, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: LeftFrontWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: -5722315222512314903, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RightWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: -5568371526223589888, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RightMainFrontWheelSupportBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: -5546747315237514756, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: LeftSecondaryFrontlSupportBeam
+      objectReference: {fileID: 0}
     - target: {fileID: -5502833357485856539, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a91f3ff5bebd9b443ad4f2e4d2a8049f, type: 2}
+    - target: {fileID: -5063223942988036812, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: LeftArmrestSupportBeam
+      objectReference: {fileID: 0}
     - target: {fileID: -4932982780345470907, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -592,19 +640,43 @@ PrefabInstance:
     - target: {fileID: -4683669308469848369, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: de7b5a6e5143912429d3d04a268cdca8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3705b3f9df8f0c340ae0dd89d9a58c04, type: 2}
+    - target: {fileID: -4636300777304409883, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RearSeatBeam
+      objectReference: {fileID: 0}
     - target: {fileID: -4613652675884519346, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: de7b5a6e5143912429d3d04a268cdca8, type: 2}
+      objectReference: {fileID: 2100000, guid: 512f2a2b2e1cdb14895ce165a7a0a152, type: 2}
+    - target: {fileID: -3798597711559607027, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: BottomToTopCrollbeam
+      objectReference: {fileID: 0}
+    - target: {fileID: -3477458294799913631, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: LeftWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: -3100686136978186089, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RightControlWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: -2914413575082383075, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: LeftSeatBeam
+      objectReference: {fileID: 0}
     - target: {fileID: -2797466374065322248, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a91f3ff5bebd9b443ad4f2e4d2a8049f, type: 2}
+    - target: {fileID: -1727348531506677991, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RightFrontWheell
+      objectReference: {fileID: 0}
     - target: {fileID: -1461304994638716399, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: de7b5a6e5143912429d3d04a268cdca8, type: 2}
+      objectReference: {fileID: 2100000, guid: 3705b3f9df8f0c340ae0dd89d9a58c04, type: 2}
     - target: {fileID: -1439730007547781893, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -625,6 +697,10 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: a91f3ff5bebd9b443ad4f2e4d2a8049f, type: 2}
+    - target: {fileID: -516098083770646512, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: LeftFootRest
+      objectReference: {fileID: 0}
     - target: {fileID: -93644311446669682, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -645,14 +721,46 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 512f2a2b2e1cdb14895ce165a7a0a152, type: 2}
+    - target: {fileID: 1805940778159003073, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: LeftControlWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 2800250516343163423, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RightArmrestBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 2971542036940430761, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: LeftMainFrontWheelSupportBeam
+      objectReference: {fileID: 0}
     - target: {fileID: 3280927520727180574, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 512f2a2b2e1cdb14895ce165a7a0a152, type: 2}
+    - target: {fileID: 3849762623622064168, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RightSupportSeatBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 4214726985332892257, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: LeftPushBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 5245042011116262203, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: LeftArmrestBeam
+      objectReference: {fileID: 0}
     - target: {fileID: 6148596154634031546, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 512f2a2b2e1cdb14895ce165a7a0a152, type: 2}
+    - target: {fileID: 6512510688612296998, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RightSecondaryFrontlSupportBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 6919683763462532184, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: LeftSupportSeatBeam
+      objectReference: {fileID: 0}
     - target: {fileID: 6944656104360116776, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -680,11 +788,26 @@ PrefabInstance:
     - target: {fileID: 8414140065852599530, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: de7b5a6e5143912429d3d04a268cdca8, type: 2}
+      objectReference: {fileID: 2100000, guid: 512f2a2b2e1cdb14895ce165a7a0a152, type: 2}
+    - target: {fileID: 8416272007918961125, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: Seat
+      objectReference: {fileID: 0}
+    - target: {fileID: 8513859187771203891, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RightPushBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 8700725330082129686, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+      propertyPath: m_Name
+      value: RightSeatBeam
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: -7136622550182105865, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
     - {fileID: -6193360207736892916, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+    - {fileID: -8700617353114198275, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+    - {fileID: 8821623529969584324, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
+    - {fileID: -4714817154256824709, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       insertIndex: 29

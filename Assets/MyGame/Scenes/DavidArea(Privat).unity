@@ -361,9 +361,17 @@ PrefabInstance:
       propertyPath: m_LocalPosition.z
       value: 0.579
       objectReference: {fileID: 0}
+    - target: {fileID: 409976341188085848, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: LeftSupportSeatBeam
+      objectReference: {fileID: 0}
     - target: {fileID: 662813129691705564, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
       propertyPath: m_Name
       value: Player(Ardunio)
+      objectReference: {fileID: 0}
+    - target: {fileID: 986316211953079065, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RightFrontWheell
       objectReference: {fileID: 0}
     - target: {fileID: 1013105606306973201, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -373,6 +381,22 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 512f2a2b2e1cdb14895ce165a7a0a152, type: 2}
+    - target: {fileID: 1259805283966690789, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: Seat
+      objectReference: {fileID: 0}
+    - target: {fileID: 1409746690308572467, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RightPushBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 2091938937175376662, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RightSeatBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 2117065045014422544, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: LeftFootRest
+      objectReference: {fileID: 0}
     - target: {fileID: 2221902246945204807, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -456,6 +480,30 @@ PrefabInstance:
     - target: {fileID: 2221902247799081426, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -23
+      objectReference: {fileID: 0}
+    - target: {fileID: 3029434828666390881, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: LeftWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3277777326006974267, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: LeftArmrestBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 3386578784601561357, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: BottomToTopCrollbeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 3553065868382667927, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RightControlWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 3619430360809409821, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: LeftSeatBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 4599922345925659942, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RightSecondaryFrontlSupportBeam
       objectReference: {fileID: 0}
     - target: {fileID: 4618977805875294714, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
       propertyPath: m_SizeDelta.x
@@ -569,6 +617,46 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -23
       objectReference: {fileID: 0}
+    - target: {fileID: 4688200616967604309, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: LeftCenterHorizontalBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 4858079934147554847, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RightArmrestBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 5132364331506926358, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RightCenterHorizontalBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 5515266095685433769, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: LeftMainFrontWheelSupportBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 5647773586406895350, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: LeftFrontWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 5826033125037034536, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RightSupportSeatBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 6134290169072431593, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RightWheel
+      objectReference: {fileID: 0}
+    - target: {fileID: 6247300014767797756, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: LeftSecondaryFrontlSupportBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 6272963900529404416, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RightMainFrontWheelSupportBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 6494100460722150629, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RearSeatBeam
+      objectReference: {fileID: 0}
     - target: {fileID: 6507177690308744270, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
@@ -577,6 +665,14 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 3705b3f9df8f0c340ae0dd89d9a58c04, type: 2}
+    - target: {fileID: 6632940584075944244, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: LeftArmrestSupportBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 6902495590709020257, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: LeftPushBeam
+      objectReference: {fileID: 0}
     - target: {fileID: 7259727617743511534, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -617,8 +713,35 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7927621965453082746, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RightArmrestSupportBeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 7934788762597564543, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: TopToBottomCrossbeam
+      objectReference: {fileID: 0}
+    - target: {fileID: 7943016567190476388, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RightFootrest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8088580305678660706, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: LeftArmrest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8747490566293801073, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: RightArmrest
+      objectReference: {fileID: 0}
+    - target: {fileID: 8987176487218262465, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+      propertyPath: m_Name
+      value: LeftControlWheel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 7130907309096254205, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+    - {fileID: 2295590249847123140, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
+    - {fileID: 6568141824613347963, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e410be4039cd43047ad967216ce9d47a, type: 3}

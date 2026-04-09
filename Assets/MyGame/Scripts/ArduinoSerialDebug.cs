@@ -9,7 +9,6 @@ public class ArduinoSerialDebug : MonoBehaviour {
     private string latestLine = null;
     private readonly object dataLock = new object();
 
-    // 🔹 Accessible from other scripts
     public static int encoder1Value;
     public static int encoder2Value;
 
