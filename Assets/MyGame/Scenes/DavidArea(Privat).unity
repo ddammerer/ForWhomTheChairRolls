@@ -478,7 +478,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: c3a8142048f3ef24db9d72a4693a30c6, type: 2}
+  - {fileID: 2100000, guid: 99701e088ebf7db4799d19dd0926bf72, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -618,18 +618,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 390701022639574594, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 65aede37cda6a204cb61b9652946fa5b, type: 2}
     - target: {fileID: 662813129691705564, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
       propertyPath: m_Name
       value: Player(Ardunio)
       objectReference: {fileID: 0}
-    - target: {fileID: 1378677263329821645, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 88a22120e21379941961421e7a1b98f1, type: 2}
     - target: {fileID: 2221902246945204807, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0
@@ -714,14 +706,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -23
       objectReference: {fileID: 0}
-    - target: {fileID: 4366881749101241080, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
-      propertyPath: m_Materials.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4366881749101241080, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
-      propertyPath: 'm_Materials.Array.data[0]'
-      value: 
-      objectReference: {fileID: 2100000, guid: 65aede37cda6a204cb61b9652946fa5b, type: 2}
     - target: {fileID: 4618977805875294714, guid: e410be4039cd43047ad967216ce9d47a, type: 3}
       propertyPath: m_SizeDelta.x
       value: 0

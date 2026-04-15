@@ -624,7 +624,7 @@ PrefabInstance:
     - target: {fileID: -5502833357485856539, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a91f3ff5bebd9b443ad4f2e4d2a8049f, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d2c9fd2a06e28246ab33ba8485f65bd, type: 2}
     - target: {fileID: -5063223942988036812, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: m_Name
       value: LeftArmrestSupportBeam
@@ -668,7 +668,7 @@ PrefabInstance:
     - target: {fileID: -2797466374065322248, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a91f3ff5bebd9b443ad4f2e4d2a8049f, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d2c9fd2a06e28246ab33ba8485f65bd, type: 2}
     - target: {fileID: -1727348531506677991, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: m_Name
       value: RightFrontWheell
@@ -696,7 +696,7 @@ PrefabInstance:
     - target: {fileID: -646481518695035523, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a91f3ff5bebd9b443ad4f2e4d2a8049f, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d2c9fd2a06e28246ab33ba8485f65bd, type: 2}
     - target: {fileID: -516098083770646512, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: m_Name
       value: LeftFootRest
@@ -768,7 +768,7 @@ PrefabInstance:
     - target: {fileID: 6979220930480056898, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
-      objectReference: {fileID: 2100000, guid: a91f3ff5bebd9b443ad4f2e4d2a8049f, type: 2}
+      objectReference: {fileID: 2100000, guid: 4d2c9fd2a06e28246ab33ba8485f65bd, type: 2}
     - target: {fileID: 7071182760956848314, guid: fd3ba754cc1093d4cb8e3a221b64d075, type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
