@@ -28,3 +28,4 @@ public class WheelchairDrive : MonoBehaviour {
         transform.Rotate(Vector3.up, rotation * Mathf.Rad2Deg);
     }
 }
+

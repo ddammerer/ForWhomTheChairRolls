@@ -13,7 +13,6 @@ public class DropdownButton : MonoBehaviour
     {
         string selectedValue = dropdown.options[dropdown.value].text;
 
-
         switch (selectedValue)
         {
             case "Good Map":
