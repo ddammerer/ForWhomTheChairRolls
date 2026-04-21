@@ -42,13 +42,18 @@ public class PauseMenuManager : MonoBehaviour
 
     void OpenPauseMenu()
     {
-        // Position menu in front of player's view
-        Vector3 spawnPos = xrCamera.position + xrCamera.forward * distanceFromPlayer;
+        // Nur horizontale Blickrichtung verwenden (Y ignorieren)
+        Vector3 flatForward = xrCamera.forward;
+        flatForward.y = 0f;
+        flatForward.Normalize();
+
+        // Position immer gerade vor dem Spieler, auf fixer Höhe
+        Vector3 spawnPos = xrCamera.position + flatForward * distanceFromPlayer;
+        spawnPos.y -= 0.1f;
         pauseMenuCanvas.transform.position = spawnPos;
 
-        // Face the player
-        pauseMenuCanvas.transform.LookAt(xrCamera.position);
-        pauseMenuCanvas.transform.Rotate(0, 180f, 0); // Flip to face correctly
+        // Menu zum Spieler ausrichten (aufrecht, nicht gekippt)
+        pauseMenuCanvas.transform.rotation = Quaternion.LookRotation(-flatForward);
 
         pauseMenuCanvas.SetActive(true);
         Time.timeScale = 0f;
