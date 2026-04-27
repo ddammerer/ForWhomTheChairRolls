@@ -8,7 +8,6 @@ public class WheelchairDrive : MonoBehaviour {
     int lastRight;
 
     void Update() {
-        // 🔹 Read directly from Arduino script
         int rightWheelDegrees = ArduinoSerialDebug.encoder1Value;
         int leftWheelDegrees = ArduinoSerialDebug.encoder2Value;
 
