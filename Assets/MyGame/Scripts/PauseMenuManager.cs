@@ -1,11 +1,14 @@
 using UnityEngine;
 using UnityEngine.XR;
+using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class PauseMenuManager : MonoBehaviour
 {
     public GameObject pauseMenuCanvas;
     public Transform xrCamera; // Your XR camera (Main Camera under XR Origin)
     public float distanceFromPlayer = 1.5f;
+    public NearFarInteractor interactorLeft;
+    public NearFarInteractor interactorRight;
 
     private bool isPaused = false;
 
@@ -42,13 +45,19 @@ public class PauseMenuManager : MonoBehaviour
 
     void OpenPauseMenu()
     {
-        // Position menu in front of player's view
-        Vector3 spawnPos = xrCamera.position + xrCamera.forward * distanceFromPlayer;
+        SetNearFarInteractors(true);
+        // Nur horizontale Blickrichtung verwenden (Y ignorieren)
+        Vector3 flatForward = xrCamera.forward;
+        flatForward.y = 0f;
+        flatForward.Normalize();
+
+        // Position immer gerade vor dem Spieler, auf fixer Höhe
+        Vector3 spawnPos = xrCamera.position + flatForward * distanceFromPlayer;
+        spawnPos.y -= 0.1f;
         pauseMenuCanvas.transform.position = spawnPos;
 
-        // Face the player
-        pauseMenuCanvas.transform.LookAt(xrCamera.position);
-        pauseMenuCanvas.transform.Rotate(0, 180f, 0); // Flip to face correctly
+        // Menu zum Spieler ausrichten (aufrecht, nicht gekippt)
+        pauseMenuCanvas.transform.rotation = Quaternion.LookRotation(flatForward);
 
         pauseMenuCanvas.SetActive(true);
         Time.timeScale = 0f;
@@ -56,6 +65,7 @@ public class PauseMenuManager : MonoBehaviour
 
     void ClosePauseMenu()
     {
+        SetNearFarInteractors(false);
         pauseMenuCanvas.SetActive(false);
         Time.timeScale = 1f;
     }
@@ -69,5 +79,11 @@ public class PauseMenuManager : MonoBehaviour
         Time.timeScale = 1f;
         // UnityEngine.SceneManagement.SceneManager.LoadScene("MainMenu");
         Application.Quit();
+    }
+
+    private void SetNearFarInteractors(bool toSet)
+    {
+        interactorLeft.enableFarCasting = toSet;
+        interactorRight.enableFarCasting = toSet;
     }
 }
