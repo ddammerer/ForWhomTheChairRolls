@@ -15,11 +15,11 @@ public class PauseMenuManager : MonoBehaviour
     void Update()
     {
         // Check for menu button (left controller menu button)
-        //if (CheckMenuButton())
-        //    TogglePause();
-
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (CheckMenuButton())
             TogglePause();
+
+        //if (Input.GetKeyDown(KeyCode.Escape))
+        //    TogglePause();
     }
 
     bool CheckMenuButton()
