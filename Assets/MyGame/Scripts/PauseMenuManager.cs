@@ -5,21 +5,20 @@ using UnityEngine.XR.Interaction.Toolkit.Interactors;
 public class PauseMenuManager : MonoBehaviour
 {
     public GameObject pauseMenuCanvas;
-    public Transform xrCamera; // Your XR camera (Main Camera under XR Origin)
     public float distanceFromPlayer = 1.5f;
     public NearFarInteractor interactorLeft;
     public NearFarInteractor interactorRight;
 
-    private bool isPaused = false;
+    private bool isPaused = false; 
+    Transform xrCamera;
+
+    private void Start() => xrCamera = Camera.main.transform;
 
     void Update()
     {
         // Check for menu button (left controller menu button)
-        if (CheckMenuButton())
+        if (CheckMenuButton() || Input.GetKeyDown(KeyCode.Escape))
             TogglePause();
-
-        //if (Input.GetKeyDown(KeyCode.Escape))
-        //    TogglePause();
     }
 
     bool CheckMenuButton()
