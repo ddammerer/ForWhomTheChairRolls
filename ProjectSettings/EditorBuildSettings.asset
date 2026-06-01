@@ -12,9 +12,9 @@ EditorBuildSettings:
     path: Assets/MyGame/Scenes/BadMap.unity
     guid: 36c2aa9cb3b438b4ea9c76639e5eda73
   - enabled: 1
-    path: Assets/MyGame/Scenes/fischTest.unity
+    path: Assets/MyGame/Scenes/GoodMap.unity
     guid: 5435e5169425f0146b87075bb37bc4c8
-  - enabled: 1
+  - enabled: 0
     path: Assets/MyGame/Scenes/TestArea.unity
     guid: a29e7de309746e74f8b04e8f93031626
   m_configObjects:
