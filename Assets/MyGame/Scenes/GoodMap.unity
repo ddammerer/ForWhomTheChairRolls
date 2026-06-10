@@ -1425,11 +1425,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2088948970434342624, guid: 87e7de075c0386b48913e02ef6e8b8b0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.28
+      value: -2.78
       objectReference: {fileID: 0}
     - target: {fileID: 2088948970434342624, guid: 87e7de075c0386b48913e02ef6e8b8b0, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.43
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2088948970434342624, guid: 87e7de075c0386b48913e02ef6e8b8b0, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1462,14 +1462,6 @@ PrefabInstance:
     - target: {fileID: 2088948970434342624, guid: 87e7de075c0386b48913e02ef6e8b8b0, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 5017026869948718844, guid: 87e7de075c0386b48913e02ef6e8b8b0, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 5957649461883745904, guid: 87e7de075c0386b48913e02ef6e8b8b0, type: 3}
-      propertyPath: m_SmoothTurnEnabled
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
