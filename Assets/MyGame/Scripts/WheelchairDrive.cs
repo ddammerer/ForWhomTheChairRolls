@@ -23,8 +23,12 @@ public class WheelchairDrive : MonoBehaviour {
         float forward = (leftDist + rightDist) / 2f;
         float rotation = (rightDist - leftDist) / wheelBase;
 
-        transform.Translate(Vector3.forward * forward, Space.Self);
-        transform.Rotate(Vector3.up, rotation * Mathf.Rad2Deg);
+        Vector3 horizontalForward = Vector3.ProjectOnPlane(transform.forward, Vector3.up).normalized;
+        if (horizontalForward.sqrMagnitude < 0.0001f)
+            horizontalForward = Vector3.forward;
+
+        transform.position += horizontalForward * forward;
+        transform.Rotate(Vector3.up, rotation * Mathf.Rad2Deg, Space.World);
     }
 }
 
